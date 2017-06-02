@@ -4,13 +4,13 @@
 <dict>
 	<key>com.apple.security.app-sandbox</key>
 	<true/>
-	<key>com.apple.security.scripting-targets
-com.apple.security.scripting-targets</key>
-	<dict>
-		<key>com.apple.terminal</key>
-		<array>
-			<string>com.apple.terminal.compose</string>
-		</array>
-	</dict>
+	<key>com.apple.security.temporary-exception.files.absolute-path.read-write</key>
+	<array>
+		<string>/etc/hosts</string>
+	</array>
+	<key>com.apple.security.temporary-exception.apple-events</key>
+	<array>
+		<string>com.apple.terminal</string>
+	</array>
 </dict>
 </plist>
