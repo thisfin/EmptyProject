@@ -33,11 +33,12 @@ class ViewController: NSViewController {
 
     func buttonClicked(_ sender: NSButton) {
         let url = URL.init(fileURLWithPath: NSOpenStepRootDirectory() + "etc/hosts")
-        let isReadable = FileManager.default.isReadableFile(atPath: url.path)
+//        let isReadable = FileManager.default.isReadableFile(atPath: url.path)
         let isWritable = FileManager.default.isWritableFile(atPath: url.path)
 //        let isWritable = FileManager.default.fileExists(atPath: url.path)
-        let dict = try! FileManager.default.attributesOfItem(atPath: url.path)
-        let dic = try! FileManager.default.attributesOfFileSystem(forPath: url.path)
+//        let dict = try! FileManager.default.attributesOfItem(atPath: url.path)
+//        let dic = try! FileManager.default.attributesOfFileSystem(forPath: url.path)
+//        let aaa = FileManager.default.enumerator(atPath: url.path)
 
         let fileContent = try! String.init(contentsOfFile: url.path, encoding: .utf8)
         NSLog(fileContent)
