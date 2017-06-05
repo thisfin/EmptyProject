@@ -23,6 +23,7 @@
 		302B4F2F1EDFEE63002352CC /* TextWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextWindow.swift; sourceTree = "<group>"; };
 		302B4F301EDFEE63002352CC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		302B4F341EDFF282002352CC /* EmptyProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EmptyProject.entitlements; sourceTree = "<group>"; };
+		66CA63A81EE551C90011AD2D /* EmptyProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EmptyProject-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +42,7 @@
 			children = (
 				302B4F181EDFECCB002352CC /* EmptyProject */,
 				302B4F171EDFECCB002352CC /* Products */,
+				66CA63AC1EE5528D0011AD2D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				302B4F341EDFF282002352CC /* EmptyProject.entitlements */,
+				66CA63A81EE551C90011AD2D /* EmptyProject-Bridging-Header.h */,
 				302B4F221EDFECCB002352CC /* Info.plist */,
 				302B4F191EDFECCB002352CC /* AppDelegate.swift */,
 				302B4F2E1EDFEE63002352CC /* Application.swift */,
@@ -64,6 +67,13 @@
 				302B4F1D1EDFECCB002352CC /* Assets.xcassets */,
 			);
 			path = EmptyProject;
+			sourceTree = "<group>";
+		};
+		66CA63AC1EE5528D0011AD2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +109,7 @@
 					302B4F151EDFECCB002352CC = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = CY25956VB2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
@@ -248,6 +259,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = EmptyProject/EmptyProject.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = CY25956VB2;
@@ -255,6 +267,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = win.opensource.EmptyProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EmptyProject/EmptyProject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -263,6 +277,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = EmptyProject/EmptyProject.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = CY25956VB2;
@@ -270,6 +285,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = win.opensource.EmptyProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EmptyProject/EmptyProject-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
