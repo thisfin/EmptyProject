@@ -12,6 +12,7 @@
 		302B4F311EDFEE63002352CC /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302B4F2E1EDFEE63002352CC /* Application.swift */; };
 		302B4F321EDFEE63002352CC /* TextWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302B4F2F1EDFEE63002352CC /* TextWindow.swift */; };
 		302B4F331EDFEE63002352CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302B4F301EDFEE63002352CC /* ViewController.swift */; };
+		66A72B5C1EEE8F7900D4C3A7 /* DidsetTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A72B5B1EEE8F7900D4C3A7 /* DidsetTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		302B4F2F1EDFEE63002352CC /* TextWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextWindow.swift; sourceTree = "<group>"; };
 		302B4F301EDFEE63002352CC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		302B4F341EDFF282002352CC /* EmptyProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EmptyProject.entitlements; sourceTree = "<group>"; };
+		66A72B5B1EEE8F7900D4C3A7 /* DidsetTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DidsetTest.swift; sourceTree = "<group>"; };
 		66CA63A81EE551C90011AD2D /* EmptyProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EmptyProject-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +64,7 @@
 				302B4F221EDFECCB002352CC /* Info.plist */,
 				302B4F191EDFECCB002352CC /* AppDelegate.swift */,
 				302B4F2E1EDFEE63002352CC /* Application.swift */,
+				66A72B5B1EEE8F7900D4C3A7 /* DidsetTest.swift */,
 				302B4F2F1EDFEE63002352CC /* TextWindow.swift */,
 				302B4F301EDFEE63002352CC /* ViewController.swift */,
 				302B4F1D1EDFECCB002352CC /* Assets.xcassets */,
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				302B4F321EDFEE63002352CC /* TextWindow.swift in Sources */,
+				66A72B5C1EEE8F7900D4C3A7 /* DidsetTest.swift in Sources */,
 				302B4F311EDFEE63002352CC /* Application.swift in Sources */,
 				302B4F331EDFEE63002352CC /* ViewController.swift in Sources */,
 				302B4F1A1EDFECCB002352CC /* AppDelegate.swift in Sources */,

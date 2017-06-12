@@ -21,40 +21,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         window.center()
         window.makeKeyAndOrderFront(self)
 
-        a.aa = "1"
-        a.aa = "2"
-
-        a = A()
-
-        b.bb = "1"
-        b.bb = "2"
-
-        b = B()
+        DidSetTest().test()
     }
-
-    var a: A = {
-        let temp = A()
-        return temp
-        }() {
-        didSet {
-            NSLog("a didset")
-        }
-    }
-
-    var b: B = {
-        let temp = B()
-        return temp
-        }() {
-        didSet {
-            NSLog("b didset")
-        }
-    }
-}
-
-class A {
-    var aa: String?
-}
-
-struct B {
-    var bb: String?
 }
