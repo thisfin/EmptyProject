@@ -6,7 +6,7 @@
 //  Copyright © 2017年 fin. All rights reserved.
 //
 
-import Cocoa
+import AppKit
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -21,6 +21,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         window.center()
         window.makeKeyAndOrderFront(self)
 
-        DidSetTest().test()
+//        DidSetTest().test()
     }
 }

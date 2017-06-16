@@ -6,13 +6,15 @@
 //  Copyright © 2017年 wenyou. All rights reserved.
 //
 
-import Cocoa
+import AppKit
 
 class TextWindow: NSWindow {
     override init(contentRect: NSRect, styleMask style: NSWindowStyleMask, backing bufferingType: NSBackingStoreType, defer flag: Bool) {
         super.init(contentRect: contentRect, styleMask: style, backing: bufferingType, defer: flag)
 
-        contentViewController = ViewController()
+        self.minSize = NSMakeSize(AppDelegate.windowSize.width, AppDelegate.windowSize.height + 22) // 22 是标题栏的高度
+//        contentViewController = ViewController()
+        contentViewController = TableTestViewController()
         title = "TextView Example"
     }
 }
