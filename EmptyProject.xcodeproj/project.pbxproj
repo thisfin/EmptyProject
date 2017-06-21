@@ -15,6 +15,7 @@
 		666158861EF39631007D650B /* TableTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666158851EF39631007D650B /* TableTestViewController.swift */; };
 		666158881EF39D1D007D650B /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666158871EF39D1D007D650B /* ScrollView.swift */; };
 		6661588A1EF3BB59007D650B /* WYVerticalCenterTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666158891EF3BB59007D650B /* WYVerticalCenterTextField.swift */; };
+		666158A31EFA620D007D650B /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666158A21EFA620D007D650B /* WindowController.swift */; };
 		66A72B5C1EEE8F7900D4C3A7 /* DidsetTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A72B5B1EEE8F7900D4C3A7 /* DidsetTest.swift */; };
 		D2D6E6BBE9AABE3E79775585 /* Pods_EmptyProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 405EDEC7E094C34ADCA112D9 /* Pods_EmptyProject.framework */; };
 /* End PBXBuildFile section */
@@ -33,6 +34,7 @@
 		666158851EF39631007D650B /* TableTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableTestViewController.swift; sourceTree = "<group>"; };
 		666158871EF39D1D007D650B /* ScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
 		666158891EF3BB59007D650B /* WYVerticalCenterTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WYVerticalCenterTextField.swift; sourceTree = "<group>"; };
+		666158A21EFA620D007D650B /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		66A72B5B1EEE8F7900D4C3A7 /* DidsetTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DidsetTest.swift; sourceTree = "<group>"; };
 		66CA63A81EE551C90011AD2D /* EmptyProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EmptyProject-Bridging-Header.h"; sourceTree = "<group>"; };
 		D5D32AEC70D6C21884934BAF /* Pods-EmptyProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmptyProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-EmptyProject/Pods-EmptyProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				666158851EF39631007D650B /* TableTestViewController.swift */,
 				302B4F2F1EDFEE63002352CC /* TextWindow.swift */,
 				302B4F301EDFEE63002352CC /* ViewController.swift */,
+				666158A21EFA620D007D650B /* WindowController.swift */,
 				666158891EF3BB59007D650B /* WYVerticalCenterTextField.swift */,
 				302B4F1D1EDFECCB002352CC /* Assets.xcassets */,
 			);
@@ -236,6 +239,7 @@
 				666158881EF39D1D007D650B /* ScrollView.swift in Sources */,
 				66A72B5C1EEE8F7900D4C3A7 /* DidsetTest.swift in Sources */,
 				302B4F311EDFEE63002352CC /* Application.swift in Sources */,
+				666158A31EFA620D007D650B /* WindowController.swift in Sources */,
 				302B4F331EDFEE63002352CC /* ViewController.swift in Sources */,
 				302B4F1A1EDFECCB002352CC /* AppDelegate.swift in Sources */,
 				6661588A1EF3BB59007D650B /* WYVerticalCenterTextField.swift in Sources */,
