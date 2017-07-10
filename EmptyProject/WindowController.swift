@@ -73,6 +73,8 @@ extension WindowController: NSTouchBarDelegate {
 
         case NSTouchBarItemIdentifier.segment:
             let segment = NSSegmentedControl.init(labels: ["a", "b", "c"], trackingMode: .selectOne, target: self, action: #selector(WindowController.buttonClicked(_:)))
+            segment.trackingMode = .selectOne
+            segment.selectedSegment = 1
             custom.view = segment
         case NSTouchBarItemIdentifier.scrubber:
             let scrubber = NSScrubber()
@@ -102,19 +104,31 @@ extension WindowController: NSScrubberDataSource {
     func scrubber(_ scrubber: NSScrubber, viewForItemAt index: Int) -> NSScrubberItemView {
         let view = NSScrubberTextItemView.init()
         view.title = getString(index: index)
+        view.isHighlighted = true
+        view.isSelected = true
+//        view.isSelected = (index % 2 == 1)
+//        view.isHighlighted = (index % 2 == 1)
         return view
     }
 }
 
 extension WindowController: NSScrubberDelegate {
+    @available(OSX 10.12.2, *)
+    func scrubber(_ scrubber: NSScrubber, didSelectItemAt selectedIndex: Int) {
+        NSLog("select \(index)")
+    }
 
+    @available(OSX 10.12.2, *)
+    func scrubber(_ scrubber: NSScrubber, didHighlightItemAt highlightedIndex: Int) {
+        NSLog("highlight \(index)")
+    }
 }
 
 extension WindowController: NSScrubberFlowLayoutDelegate {
     @available(OSX 10.12.2, *)
     func scrubber(_ scrubber: NSScrubber, layout: NSScrubberFlowLayout, sizeForItemAt itemIndex: Int) -> NSSize {
         let label = NSTextField.init(string: getString(index: itemIndex))
-        return NSMakeSize(label.fittingSize.width, 30)
+        return NSMakeSize(label.fittingSize.width, 0)
     }
 }
 

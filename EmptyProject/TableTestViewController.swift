@@ -184,6 +184,16 @@ class TableTestViewController: NSViewController, NSTableViewDataSource, NSTableV
         let row: Int = sender.clickedRow
         NSLog("%ld", row)
     }
+
+    @available(OSX 10.12.2, *)
+    override func makeTouchBar() -> NSTouchBar? {
+        let touchBar = NSTouchBar.init()
+        touchBar.delegate = self
+        touchBar.customizationIdentifier = .test
+        touchBar.defaultItemIdentifiers = [.only]
+//        touchBar.customizationAllowedItemIdentifiers = [, .revert,.button]
+        return touchBar
+    }
 }
 
 class Bean {
@@ -195,3 +205,27 @@ class Bean {
         self.name = name
     }
 }
+
+extension TableTestViewController: NSTouchBarDelegate {
+    @available(OSX 10.12.2, *)
+    func touchBar(_ touchBar: NSTouchBar, makeItemForIdentifier identifier: NSTouchBarItemIdentifier) -> NSTouchBarItem? {
+        let custom = NSCustomTouchBarItem.init(identifier: identifier)
+        switch identifier {
+        case NSTouchBarItemIdentifier.only:
+            let label = NSButton.init(title: "save", target: self, action: #selector(WindowController.buttonClicked(_:)))
+            custom.view = label
+        default:
+            ()
+        }
+        return custom
+    }
+}
+
+private extension NSTouchBarCustomizationIdentifier {
+    static let test = NSTouchBarCustomizationIdentifier.init("onlytest")
+}
+
+private extension NSTouchBarItemIdentifier {
+    static let only = NSTouchBarItemIdentifier.init("only")
+}
+
